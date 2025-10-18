@@ -1,103 +1,311 @@
+import photoHero from "@/public/hero.png";
 import Image from "next/image";
+import tools from "@/public/tool.png";
+import FrontEnd from "@/public/front-end.png";
+import Backend from "@/public/backend.png";
+import {
+  SiGit,
+  SiGithub,
+  SiDocker,
+  SiFirebase,
+  SiPostman,
+  SiSupabase,
+  SiNpm,
+  SiVercel,
+  SiRender,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiCssmodules,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiBootstrap,
+  SiRedux,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMongoose,
+  SiPostgresql,
+  SiMysql,
+  SiJsonwebtokens,
+  SiAuth0,
+  SiSwagger,
+} from "react-icons/si";
 
-export default function Home() {
+function page() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <section
+        id="hero"
+        className="flex flex-col-reverse md:flex-row p-6 md:mb-0 bg-slate-100 w-full"
+      >
+        <div className="flex flex-col space-y-10 lg:mb-16 md:w-1/2 justify-between items-center mt-24 max-w-7xl">
+          <div className="flex flex-col items-center md:items-start max-w-md w-full space-y-10">
+            <h1 className="text-5xl md:text-7xl font-bold text-center md:text-left">
+              Hello, I am Va Sona
+            </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <p className="text-center text-2xl md:text-left text-gray-600">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+
+            <a
+              href="#"
+              className="bg-blue-500 text-white px-14 py-3 rounded-md text-2xl hover:bg-blue-600 transition-colors"
+            >
+              Contact me
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="mx-auto md:w-1/2 flex justify-center rounded-lg">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={photoHero}
+            alt="Hero photo"
+            width={400}
+            height={400}
+            className="object-cover rounded-md"
+            priority
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </section>
+      <section id="about" className="w-full bg-slate-100 pt-32 z-10 relative">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 ">
+          <div className="relative flex flex-col md:flex-row bg-white items-center md:items-center rounded-2xl shadow-lg overflow-hidden p-10 md:p-16 gap-10 md:gap-16 translate-y-20">
+            <div className="flex justify-center md:justify-start">
+              <Image
+                src={photoHero}
+                alt="Portrait photo"
+                width={320}
+                height={320}
+                className="rounded-xl object-cover"
+              />
+            </div>
+            <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 md:space-y-8 max-w-lg">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                I am a Professional Web Developer
+              </h1>
+
+              <p className="text-gray-600 text-lg leading-relaxed">
+                I specialize in building responsive and high-performance web
+                applications using modern tools like React, Next.js, and
+                Node.js.
+              </p>
+
+              <a
+                href="#"
+                className="bg-blue-500 text-white px-10 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors"
+              >
+                Contact me
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="w-full pt-70 pb-48">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex flex-col justify-center md:justify-start md:w-1/2 space-y-6">
+              <div className="flex items-center space-x-6 w-full border-b-2 pb-2">
+                <Image
+                  src={tools}
+                  alt="tools icon"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
+                <p className="text-4xl font-bold">Tools</p>
+              </div>
+
+              <div className="flex items-center space-x-6">
+                <SiGit
+                  className="text-[#F05032] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiGithub
+                  className="text-[#181717] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiDocker
+                  className="text-[#2496ED] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiFirebase
+                  className="text-[#FFCA28] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiPostman
+                  className="text-[#FF6C37] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiSupabase
+                  className="text-[#3ECF8E] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiNpm
+                  className="text-[#CB3837] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiVercel
+                  className="text-[#000000] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiRender
+                  className="text-[#46E3B7] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+              </div>
+              <div className="flex items-center space-x-6 w-full border-b-2 pb-2 mt-10">
+                <Image
+                  src={FrontEnd}
+                  alt="front-end icon"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
+                <p className="text-4xl font-bold">Front-end</p>
+              </div>
+              <div className="flex items-center space-x-6">
+                <SiHtml5
+                  className="text-[#E34F26] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiCss3
+                  className="text-[#1572B6] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiJavascript
+                  className="text-[#F7DF1E] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiCssmodules
+                  className="text-black hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiStyledcomponents
+                  className="text-[#DB7093] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiTailwindcss
+                  className="text-[#06B6D4] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiBootstrap
+                  className="text-[#7952B3] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiRedux
+                  className="text-[#764ABC] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiReact
+                  className="text-[#61DAFB] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiNextdotjs
+                  className="text-black hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+              </div>
+              <div className="flex items-center space-x-6 w-full border-b-2 pb-2 mt-10">
+                <Image
+                  src={Backend}
+                  alt="back-end icon"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
+                <p className="text-4xl font-bold">Back-end</p>
+              </div>
+              <div className="flex items-center space-x-6">
+                <SiNodedotjs
+                  className="text-[#339933] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiExpress
+                  className="text-black hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiMongodb
+                  className="text-[#47A248] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiMongoose
+                  className="text-[#880000] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiPostgresql
+                  className="text-[#4169E1] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiMysql
+                  className="text-[#4479A1] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiJsonwebtokens
+                  className="text-black hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiAuth0
+                  className="text-[#4285F4] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+                <SiSwagger
+                  className="text-[#85EA2D] hover:scale-110 transition-transform duration-200"
+                  size={40}
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Leadership */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+                <span className="text-5xl mb-4">👑</span>
+                <h3 className="text-xl font-semibold mb-2">Leadership</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Guiding teams and projects with strong decision-making,
+                  collaboration, and vision to ensure efficiency and quality
+                  results.
+                </p>
+              </div>
+
+              {/* Research */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+                <span className="text-5xl mb-4">🔍</span>
+                <h3 className="text-xl font-semibold mb-2">Research</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Conducting analysis and user studies to identify optimal
+                  solutions and improve user experience before development.
+                </p>
+              </div>
+
+              {/* Front-End */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+                <span className="text-5xl mb-4">🎨</span>
+                <h3 className="text-xl font-semibold mb-2">Front-End</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Creating modern, responsive interfaces using React, Next.js,
+                  Tailwind CSS, and Styled Components.
+                </p>
+              </div>
+
+              {/* Back-End */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+                <span className="text-5xl mb-4">⚙️</span>
+                <h3 className="text-xl font-semibold mb-2">Back-End</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Developing secure and efficient APIs using Node.js, Express,
+                  and databases like MongoDB and PostgreSQL.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
+export default page;
