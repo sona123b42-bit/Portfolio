@@ -1,6 +1,7 @@
 import Image from "next/image";
 import firstProject from "@/public/first-project-cover.png";
 import secondProject from "@/public/second-project-cover.jpg";
+import thirdProject from "@/public/third-project-cover.png";
 export default function Portfolio() {
   return (
     <section id="portfolio" className="w-full bg-slate-100 pt-10 pb-20">
@@ -87,6 +88,46 @@ export default function Portfolio() {
                   loading="lazy"
                   className="object-cover rounded-lg"
                 />
+              </div>
+            </div>
+            <div className="flex flex-col space-x-5 shadow-lg justify-between md:flex-row items-center bg-slate-50 rounded-lg pb-15">
+              <div className="md:w-1/2 m-10 rounded-lg pl-5">
+                <Image
+                  src={thirdProject}
+                  alt="my wild oasis app for staff"
+                  placeholder="blur"
+                  loading="lazy"
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <div className="md:w-1/2 flex flex-col md:text-left text-center space-y-6 md:pl-15">
+                <h1 className="text-3xl font-bold">Natours</h1>
+                <p className="max-w-md text-lg text-gray-600">
+                  Natours is a modern tour-booking app I built with Next.js and
+                  Tailwind CSS, designed for fast performance and a clean user
+                  experience. It connects to a custom Node.js + MongoDB backend
+                  to handle tours, authentication, and bookings, showing my
+                  ability to create full-stack web apps that feel professional
+                  and production-ready.
+                </p>
+                <div className="flex flex-row space-x-4 justify-center md:justify-start">
+                  <a
+                    href="https://natours-dusky-five.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-500 text-white px-10 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/sona123b42-bit/Natours.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border border-slate-300 text-slate-600 px-10 py-3 rounded-md text-lg hover:bg-slate-100 transition-colors"
+                  >
+                    View Code
+                  </a>
+                </div>
               </div>
             </div>
           </div>

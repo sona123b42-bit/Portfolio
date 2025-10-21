@@ -3,7 +3,7 @@
 export default function Navigation({ handelClick, isOpen, setIsOpen }) {
   return (
     <>
-      <nav className="relative z-50 text-lg [font-family:var(--font-manrope),sans-serif] flex items-center justify-between px-6 py-4">
+      <nav className="relative z-50 text-lg  flex items-center justify-between px-6 py-4">
         {/* Desktop Nav */}
         <div className="hidden items-center space-x-10 uppercase text-gray-700 md:flex">
           <a
