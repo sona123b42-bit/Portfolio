@@ -17,7 +17,7 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="bg-blue-500 text-white px-14 py-3 rounded-md text-2xl hover:bg-blue-600 transition-colors"
+              className="bg-blue-500 text-white px-14 py-3 rounded-md text-2xl hover:bg-blue-600 transition-colors w-full md:w-auto text-center"
             >
               Contact me
             </a>

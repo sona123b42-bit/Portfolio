@@ -1,9 +1,12 @@
+"use client";
 import Skill from "./_components/skill";
 import Hero from "./_components/hero";
 import About from "./_components/About";
 import Portfolio from "./_components/Portfolio";
 import Contact from "./_components/Contact";
-function page() {
+import useUrlSectionUpdater from "./_components/useUrlSectionUpdater";
+function Page() {
+  useUrlSectionUpdater(["hero", "about", "skills", "portfolio", "contact"]);
   return (
     <>
       <Hero />
@@ -14,4 +17,4 @@ function page() {
     </>
   );
 }
-export default page;
+export default Page;

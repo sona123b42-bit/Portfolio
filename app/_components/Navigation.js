@@ -35,7 +35,7 @@ export default function Navigation({ handelClick, isOpen, setIsOpen }) {
         <button
           id="menu-btn"
           onClick={handelClick}
-          className={`absolute right-6 top-4 z-[60] block md:hidden focus:outline-none hamburger ${
+          className={`absolute right-6 z-[60] block md:hidden focus:outline-none hamburger ${
             isOpen ? "open" : ""
           }`}
         >
@@ -47,7 +47,7 @@ export default function Navigation({ handelClick, isOpen, setIsOpen }) {
 
       <div
         id="menu"
-        className={`fixed inset-0 z-40 flex-col items-center self-end w-full h-full min-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue transition-all duration-300 ${
+        className={`fixed inset-0 z-40 flex flex-col items-center w-full h-screen px-6 py-4 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 bg-veryDarkBlue transition-all duration-300 ${
           isOpen ? "flex" : "hidden"
         }`}
       >

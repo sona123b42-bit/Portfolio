@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${manrope.variable} bg-white`}>
-        <div className="w-full mx-auto p-2">
+        <div className="w-full mx-auto md:p-2">
           <Header />
           <main>{children}</main>
         </div>

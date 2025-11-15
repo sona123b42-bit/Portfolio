@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 export default function Contact() {
   return (
-    <section className="bg-slate-50 py-20" id="contact">
+    <section className="bg-slate-50 py-20 px-2 md:px-0" id="contact">
       <div className="max-w-4xl mx-auto text-center space-y-6 ">
         <h2 className="text-4xl font-bold ">Let’s Connect</h2>
         <p className="text-slate-600 text-lg">
